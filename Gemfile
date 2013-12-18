@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.8'
+#gem 'pg'
+gem 'bootstrap-sass'  #, '3.0.3.0'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -8,6 +10,7 @@ gem 'rails', '3.2.8'
 group :development, :test do
   gem 'sqlite3'
   gem 'rspec-rails'
+  gem 'guard-rspec'
 end
 
 
@@ -27,6 +30,9 @@ gem 'jquery-rails'
 
 group :test do
   gem 'capybara', '1.1.2'
+  # system-dependent gems
+  gem 'rb-inotify', '0.9.3'
+  gem 'libnotify', '0.8.2'
 end
 
 group :production do
